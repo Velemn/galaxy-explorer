@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="relative z-10 flex min-h-screen flex-col items-center justify-end overflow-hidden px-5 pb-20 pt-28 text-center md:pb-24">
       <img
-        src="/nasa/andromeda-wide.jpg"
+        src={`${import.meta.env.BASE_URL}nasa/andromeda-wide.jpg`}
         alt=""
         className="absolute inset-0 h-full w-full object-cover opacity-72"
       />

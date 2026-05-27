@@ -1,3 +1,5 @@
+const BASE = import.meta.env.BASE_URL
+
 export const galaxyTypes = [
   {
     id: 'spiral',
@@ -6,7 +8,7 @@ export const galaxyTypes = [
     description: '最具标志性的星系形态，拥有明亮的旋臂从中心核球向外延伸。恒星、气体和尘埃沿旋臂分布，形成壮观的螺旋图案。银河系即属此类。',
     features: ['旋臂结构', '活跃的恒星形成', '包含大量气体和尘埃'],
     color: '#2997ff',
-    image: '/nasa/whirlpool.jpg',
+    image: `${BASE}nasa/whirlpool.jpg`,
   },
   {
     id: 'elliptical',
@@ -15,7 +17,7 @@ export const galaxyTypes = [
     description: '呈椭圆形或圆形，缺少明显的旋臂结构。恒星运动随机，气体和尘埃稀少，恒星形成活动较低，多为年老恒星。',
     features: ['椭球形状', '年老恒星为主', '气体尘埃稀少'],
     color: '#8e8e93',
-    image: '/nasa/sombrero.jpg',
+    image: `${BASE}nasa/sombrero.jpg`,
   },
   {
     id: 'irregular',
@@ -24,7 +26,7 @@ export const galaxyTypes = [
     description: '没有规则的形状，通常由星系碰撞或引力扰动造成。富含气体和尘埃，恒星形成活动剧烈，呈现出混沌而美丽的外观。',
     features: ['不规则形态', '剧烈恒星形成', '多由引力扰动造成'],
     color: '#ff9f0a',
-    image: '/nasa/lmc.jpg',
+    image: `${BASE}nasa/lmc.jpg`,
   },
 ]
 
@@ -46,7 +48,7 @@ export const famousGalaxies = [
     description: '距银河系最近的大型螺旋星系，约250万光年。正以每秒110公里的速度靠近银河系，预计40亿年后两者将发生碰撞合并。',
     distance: '250万光年',
     type: '螺旋星系',
-    image: '/nasa/andromeda.jpg',
+    image: `${BASE}nasa/andromeda.jpg`,
   },
   {
     name: '涡状星系',
@@ -54,7 +56,7 @@ export const famousGalaxies = [
     description: '位于猎犬座的经典螺旋星系，距地球约2300万光年。与伴星系NGC 5195的引力互动使其旋臂结构异常清晰。',
     distance: '2300万光年',
     type: '螺旋星系',
-    image: '/nasa/whirlpool.jpg',
+    image: `${BASE}nasa/whirlpool.jpg`,
   },
   {
     name: '草帽星系',
@@ -62,7 +64,7 @@ export const famousGalaxies = [
     description: '位于室女座，距地球约2800万光年。明亮的核球与暗色尘埃带形成草帽般的外观，兼具螺旋和椭圆星系特征。',
     distance: '2800万光年',
     type: '螺旋/椭圆',
-    image: '/nasa/sombrero.jpg',
+    image: `${BASE}nasa/sombrero.jpg`,
   },
   {
     name: '车轮星系',
@@ -70,7 +72,7 @@ export const famousGalaxies = [
     description: '位于玉夫座，距地球约5亿光年。由一次星系碰撞产生的环状结构，外环充满炽热的年轻恒星。',
     distance: '5亿光年',
     type: '环状星系',
-    image: '/nasa/cartwheel.jpg',
+    image: `${BASE}nasa/cartwheel.jpg`,
   },
   {
     name: '大麦哲伦云',
@@ -78,7 +80,7 @@ export const famousGalaxies = [
     description: '银河系最大的卫星星系，距地球约16万光年。不规则星系，在南半球肉眼可见，是恒星形成研究的重要目标。',
     distance: '16万光年',
     type: '不规则星系',
-    image: '/nasa/lmc.jpg',
+    image: `${BASE}nasa/lmc.jpg`,
   },
 ]
 
