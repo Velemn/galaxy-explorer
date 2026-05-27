@@ -1,0 +1,49 @@
+<h2>Choose the page structure</h2>
+<p class="subtitle">Single-page scrolling layout — which section arrangement works best?</p>
+
+<div class="cards">
+  <div class="card" data-choice="story" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: #0a0a1a; padding: 20px; height: 240px; display: flex; flex-direction: column; gap: 6px; overflow: hidden;">
+      <div style="background: linear-gradient(135deg, rgba(100,150,255,0.15), rgba(150,100,255,0.1)); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; padding: 10px 12px; color: rgba(255,255,255,0.5); font-size: 9px; text-align: center;">HERO — 深空背景 · 大标题 · 星空粒子动画</div>
+      <div style="background: linear-gradient(135deg, rgba(100,150,255,0.1), rgba(150,100,255,0.05)); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px; color: rgba(255,255,255,0.5); font-size: 9px; text-align: center;">什么是星系 — 介绍 + 大图</div>
+      <div style="background: linear-gradient(135deg, rgba(100,150,255,0.1), rgba(150,100,255,0.05)); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px; color: rgba(255,255,255,0.5); font-size: 9px; text-align: center;">星系分类 — 螺旋 / 椭圆 / 不规则 · 三列卡片</div>
+      <div style="background: linear-gradient(135deg, rgba(100,150,255,0.1), rgba(150,100,255,0.05)); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px; color: rgba(255,255,255,0.5); font-size: 9px; text-align: center;">银河系专题 — 结构图解 · 数据亮点</div>
+      <div style="background: linear-gradient(135deg, rgba(100,150,255,0.1), rgba(150,100,255,0.05)); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px; color: rgba(255,255,255,0.5); font-size: 9px; text-align: center;">著名星系画廊 — 水平滚动卡片（仙女座、涡状星系等）</div>
+      <div style="background: linear-gradient(135deg, rgba(100,150,255,0.1), rgba(150,100,255,0.05)); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px; color: rgba(255,255,255,0.5); font-size: 9px; text-align: center;">FOOTER — 数据来源 · 引用</div>
+    </div>
+    <div class="card-body">
+      <h3>叙事型 Story Flow</h3>
+      <p>从概念到分类再到具体案例。适合科普阅读，层层深入，信息密度渐进。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="showcase" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: #0a0a1a; padding: 20px; height: 240px; display: flex; flex-direction: column; gap: 6px; overflow: hidden;">
+      <div style="background: linear-gradient(135deg, rgba(100,150,255,0.15), rgba(150,100,255,0.1)); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; padding: 10px 12px; color: rgba(255,255,255,0.5); font-size: 9px; text-align: center;">HERO — 全屏3D地球/银河 · 标题叠加</div>
+      <div style="background: linear-gradient(135deg, rgba(100,150,255,0.1), rgba(150,100,255,0.05)); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px; color: rgba(255,255,255,0.5); font-size: 9px; text-align: center;">星系画廊 — 大图瀑布流 / 网格 · 悬停放大效果</div>
+      <div style="background: linear-gradient(135deg, rgba(100,150,255,0.1), rgba(150,100,255,0.05)); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px; color: rgba(255,255,255,0.5); font-size: 9px; text-align: center;">交互对比器 — 并排比较不同星系类型（拖拽滑块）</div>
+      <div style="background: linear-gradient(135deg, rgba(100,150,255,0.1), rgba(150,100,255,0.05)); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px; color: rgba(255,255,255,0.5); font-size: 9px; text-align: center;">数据仪表盘 — 星系统计：数量 / 距离 / 年龄（数字滚动动画）</div>
+      <div style="background: linear-gradient(135deg, rgba(100,150,255,0.1), rgba(150,100,255,0.05)); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px; color: rgba(255,255,255,0.5); font-size: 9px; text-align: center;">时间线 — 宇宙演化时间轴 · 大爆炸 → 至今</div>
+      <div style="background: linear-gradient(135deg, rgba(100,150,255,0.1), rgba(150,100,255,0.05)); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px; color: rgba(255,255,255,0.5); font-size: 9px; text-align: center;">FOOTER</div>
+    </div>
+    <div class="card-body">
+      <h3>沉浸体验型 Immersive Showcase</h3>
+      <p>视觉驱动，强调交互。图片画廊、对比器、数字滚动。更适合"wow"效果。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="hybrid" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: #0a0a1a; padding: 20px; height: 240px; display: flex; flex-direction: column; gap: 6px; overflow: hidden;">
+      <div style="background: linear-gradient(135deg, rgba(100,150,255,0.15), rgba(150,100,255,0.1)); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; padding: 10px 12px; color: rgba(255,255,255,0.5); font-size: 9px; text-align: center;">HERO — 星空粒子 + 视差标题</div>
+      <div style="background: linear-gradient(135deg, rgba(100,150,255,0.1), rgba(150,100,255,0.05)); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px; color: rgba(255,255,255,0.5); font-size: 9px; text-align: center;">星系概述 — 简短文字 + 星系分类三卡</div>
+      <div style="background: linear-gradient(135deg, rgba(100,150,255,0.1), rgba(150,100,255,0.05)); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px; color: rgba(255,255,255,0.5); font-size: 9px; text-align: center;">太阳系 8 行星 — 3D 轨道旋转展示（Three.js 亮点）</div>
+      <div style="background: linear-gradient(135deg, rgba(100,150,255,0.1), rgba(150,100,255,0.05)); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px; color: rgba(255,255,255,0.5); font-size: 9px; text-align: center;">银河系专题 — 数据亮点 · 结构图</div>
+      <div style="background: linear-gradient(135deg, rgba(100,150,255,0.1), rgba(150,100,255,0.05)); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px; color: rgba(255,255,255,0.5); font-size: 9px; text-align: center;">著名星系 — 水平滚动卡片</div>
+      <div style="background: linear-gradient(135deg, rgba(100,150,255,0.1), rgba(150,100,255,0.05)); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px; color: rgba(255,255,255,0.5); font-size: 9px; text-align: center;">FOOTER</div>
+    </div>
+    <div class="card-body">
+      <h3>均衡型 Balanced Hybrid ⭐推荐</h3>
+      <p>叙事+视觉兼顾。有3D行星轨道作为技术亮点，有科普内容也有交互体验。信息量适中，实现成本可控。</p>
+    </div>
+  </div>
+</div>

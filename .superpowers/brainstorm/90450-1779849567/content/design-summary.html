@@ -1,0 +1,110 @@
+<h2>Design Summary — Apple × Galaxy</h2>
+<p class="subtitle">Final design system before implementation</p>
+
+<div class="section">
+  <h3>Color Palette</h3>
+  <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 12px;">
+    <div style="text-align: center;">
+      <div style="width: 60px; height: 60px; border-radius: 12px; background: #000000; border: 1px solid rgba(255,255,255,0.1);"></div>
+      <span style="font-size: 10px; color: rgba(255,255,255,0.5);">#000000<br>Background</span>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 60px; height: 60px; border-radius: 12px; background: #f5f5f7;"></div>
+      <span style="font-size: 10px; color: rgba(255,255,255,0.5);">#f5f5f7<br>Primary Text</span>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 60px; height: 60px; border-radius: 12px; background: #86868b;"></div>
+      <span style="font-size: 10px; color: rgba(255,255,255,0.5);">#86868b<br>Secondary Text</span>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 60px; height: 60px; border-radius: 12px; background: #2997ff;"></div>
+      <span style="font-size: 10px; color: rgba(255,255,255,0.5);">#2997ff<br>Accent / CTA</span>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 60px; height: 60px; border-radius: 12px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08);"></div>
+      <span style="font-size: 10px; color: rgba(255,255,255,0.5);">6% white<br>Card Surface</span>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Typography</h3>
+  <div style="margin-top: 12px;">
+    <div style="font-family: -apple-system, sans-serif; font-size: 56px; font-weight: 700; letter-spacing: -1.5px; color: #f5f5f7;">Heading 1 · 56px/700</div>
+    <div style="font-family: -apple-system, sans-serif; font-size: 40px; font-weight: 600; letter-spacing: -1px; color: #f5f5f7; margin-top: 8px;">Heading 2 · 40px/600</div>
+    <div style="font-family: -apple-system, sans-serif; font-size: 28px; font-weight: 600; letter-spacing: -0.5px; color: #f5f5f7; margin-top: 8px;">Heading 3 · 28px/600</div>
+    <div style="font-family: -apple-system, sans-serif; font-size: 17px; font-weight: 400; color: #86868b; margin-top: 8px; line-height: 1.5;">Body · 17px/400 — SF Pro Display, -apple-system fallback</div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Page Structure (6 Sections)</h3>
+  <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 12px;">
+    <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 12px 16px; display: flex; align-items: center; gap: 12px;">
+      <span style="color: rgba(255,255,255,0.3); font-size: 12px; font-weight: 600; min-width: 20px;">01</span>
+      <div><strong style="color: #f5f5f7;">Hero</strong><span style="color: #86868b; font-size: 13px; margin-left: 8px;">深空背景 + 星空粒子 + 大标题</span></div>
+    </div>
+    <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 12px 16px; display: flex; align-items: center; gap: 12px;">
+      <span style="color: rgba(255,255,255,0.3); font-size: 12px; font-weight: 600; min-width: 20px;">02</span>
+      <div><strong style="color: #f5f5f7;">星系概述</strong><span style="color: #86868b; font-size: 13px; margin-left: 8px;">简短介绍 + 三类星系卡片</span></div>
+    </div>
+    <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 12px 16px; display: flex; align-items: center; gap: 12px;">
+      <span style="color: rgba(255,255,255,0.3); font-size: 12px; font-weight: 600; min-width: 20px;">03</span>
+      <div><strong style="color: #f5f5f7;">太阳系行星</strong><span style="color: #86868b; font-size: 13px; margin-left: 8px;">Three.js 3D 轨道旋转展示</span></div>
+    </div>
+    <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 12px 16px; display: flex; align-items: center; gap: 12px;">
+      <span style="color: rgba(255,255,255,0.3); font-size: 12px; font-weight: 600; min-width: 20px;">04</span>
+      <div><strong style="color: #f5f5f7;">银河系专题</strong><span style="color: #86868b; font-size: 13px; margin-left: 8px;">结构图 + 数据亮点</span></div>
+    </div>
+    <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 12px 16px; display: flex; align-items: center; gap: 12px;">
+      <span style="color: rgba(255,255,255,0.3); font-size: 12px; font-weight: 600; min-width: 20px;">05</span>
+      <div><strong style="color: #f5f5f7;">著名星系</strong><span style="color: #86868b; font-size: 13px; margin-left: 8px;">水平滚动卡片画廊</span></div>
+    </div>
+    <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 12px 16px; display: flex; align-items: center; gap: 12px;">
+      <span style="color: rgba(255,255,255,0.3); font-size: 12px; font-weight: 600; min-width: 20px;">06</span>
+      <div><strong style="color: #f5f5f7;">Footer</strong><span style="color: #86868b; font-size: 13px; margin-left: 8px;">简洁收尾</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Tech Stack</h3>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px;">
+    <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px;">
+      <span style="color: #f5f5f7; font-weight: 600; font-size: 13px;">React 18</span>
+      <span style="color: #86868b; font-size: 11px; display: block;">组件化框架</span>
+    </div>
+    <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px;">
+      <span style="color: #f5f5f7; font-weight: 600; font-size: 13px;">Vite</span>
+      <span style="color: #86868b; font-size: 11px; display: block;">构建工具</span>
+    </div>
+    <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px;">
+      <span style="color: #f5f5f7; font-weight: 600; font-size: 13px;">Tailwind CSS</span>
+      <span style="color: #86868b; font-size: 11px; display: block;">样式框架</span>
+    </div>
+    <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px;">
+      <span style="color: #f5f5f7; font-weight: 600; font-size: 13px;">Framer Motion</span>
+      <span style="color: #86868b; font-size: 11px; display: block;">滚动动画</span>
+    </div>
+    <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px;">
+      <span style="color: #f5f5f7; font-weight: 600; font-size: 13px;">Three.js / R3F</span>
+      <span style="color: #86868b; font-size: 11px; display: block;">3D 行星轨道</span>
+    </div>
+    <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); border-radius: 6px; padding: 10px 12px;">
+      <span style="color: #f5f5f7; font-weight: 600; font-size: 13px;">Lucide Icons</span>
+      <span style="color: #86868b; font-size: 11px; display: block;">图标库</span>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Key Interactions</h3>
+  <ul style="color: #86868b; font-size: 14px; line-height: 1.8;">
+    <li>滚动触发元素淡入（Framer Motion <code style="color: #2997ff;">useScroll</code> + <code style="color: #2997ff;">useTransform</code>）</li>
+    <li>星空粒子 Canvas 背景（持续缓慢移动）</li>
+    <li>星系分类卡片 hover 微放大 + 发光边框</li>
+    <li>3D 太阳系可拖拽旋转 / 自动旋转</li>
+    <li>著名星系水平滚动（触控板/鼠标拖拽）</li>
+    <li>数字滚动动画（银河系数据）</li>
+  </ul>
+</div>
